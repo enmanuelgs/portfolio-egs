@@ -6,35 +6,35 @@ const Projects = () => {
 
     return (
         <section id="projects">
-            {/* --- SECCIÓN DE EXPERIENCIA LABORAL --- */}
-            <h2 className="numbered-heading">Experiencia Laboral</h2>
-            <div className="experience-content" style={{ marginBottom: '80px' }}>
-                <div className="project-content">
+            {/* --- SECCIÓN DE PROYECTOS Y COLABORACIONES --- */}
+            <h2 className="numbered-heading">Proyectos y Colaboraciones</h2>
+
+            <div className="projects-grid">
+                
+                {/* SIPAD - Colaboración Destacada */}
+                <div className="project-content" style={{ marginBottom: '80px' }}>
                     <div>
-                        <p className="project-overline" style={{ color: brandBlue }}>Septiembre 2022 – Junio 2023</p>
-                        <h3 className="project-title" style={{ color: brandBlue }}>Pasante de Tecnología — DINTEL (P.N.)</h3>
+                        <p className="project-overline" style={{ color: brandBlue }}>Colaboración Destacada (Backend)</p>
+                        <h3 className="project-title" style={{ color: brandBlue }}>SIPAD</h3>
                         <div className="project-description">
                             <p>
-                                Desarrollo de un sistema de escritorio para el control de inventario y equipos del departamento.
-                                Además, brindé soporte técnico de primer y segundo nivel y generé informes técnicos detallados
-                                sobre el estado del parque tecnológico de la institución.
+                                Participé activamente en el desarrollo del backend de <span className="highlight">SIPAD</span> (Sistema de Predicción de Deserción Escolar). 
+                                Una plataforma crítica que integra datos de <span className="highlight">MINERD, ONE y CONANI</span> mediante un 
+                                <span className="highlight"> Pipeline ETL automatizado</span> y una arquitectura basada en 
+                                <span className="highlight"> Clean Architecture</span> para predecir zonas de riesgo educativo.
                             </p>
                         </div>
                         <ul className="project-tech-list">
-                            <li>C#</li>
-                            <li>.NET</li>
-                            <li>SQL Server</li>
-                            <li>Office Suite</li>
+                            <li>ASP.NET Core 8.0</li>
+                            <li>PostgreSQL</li>
+                            <li>ETL Services</li>
+                            <li>Repository Pattern</li>
+                            <li>Docker</li>
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            {/* --- SECCIÓN DE PROYECTOS PRINCIPALES --- */}
-            <h2 className="numbered-heading">Proyectos Destacados</h2>
-
-            <div className="projects-grid">
-                {/* SEGMUN - Destacado */}
+                {/* SEGMUN - Proyecto Principal */}
                 <div className="project-content" style={{ marginBottom: '60px' }}>
                     <div>
                         <p className="project-overline" style={{ color: brandBlue }}>Proyecto Principal</p>
@@ -59,27 +59,6 @@ const Projects = () => {
                                 <i className="fa-brands fa-github"></i>
                             </a>
                         </div>
-                    </div>
-                </div>
-
-                {/* SIPAD - Destacado */}
-                <div className="project-content" style={{ marginBottom: '60px' }}>
-                    <div>
-                        <p className="project-overline" style={{ color: brandBlue }}>Proyecto de Tesis</p>
-                        <h3 className="project-title" style={{ color: brandBlue }}>SIPAD</h3>
-                        <div className="project-description">
-                            <p>
-                                Sistema Predictivo de Abandono Escolar a escala nacional. Integra datos de MINERD, ONE y CONANI
-                                utilizando una arquitectura de microservicios ETL para la toma de decisiones en políticas públicas.
-                            </p>
-                        </div>
-                        <ul className="project-tech-list">
-                            <li>ASP.NET Core 8.0</li>
-                            <li>PostgreSQL</li>
-                            <li>Clean Architecture</li>
-                            <li>ETL Services</li>
-                            <li>Repository Pattern</li>
-                        </ul>
                     </div>
                 </div>
 
