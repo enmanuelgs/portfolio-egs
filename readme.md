@@ -74,12 +74,11 @@ Diseñado para funcionar en cualquier dispositivo:
 ## Características Técnicas
 
 ### Tecnologías Utilizadas
-- **Frontend**: Next.js 14+ (React)
-- **Styling**: Tailwind CSS v4 (PostCSS, cssnano)
-- **Animation**: Framer Motion
-- **Typography**: Google Fonts (Inter, Space Grotesk)
-- **Icons**: Lucide React
-- **Hosting**: Vercel
+- **Frontend**: React 18+ (Vite)
+- **Styling**: Vanilla CSS (Modern CSS variables, Flexbox, Grid)
+- **Icons**: FontAwesome 6 (CDN)
+- **Typography**: Google Fonts (Inter, Fira Code)
+- **Hosting**: GitHub Pages / Vercel
 
 ### Arquitectura
 - **Component-Based**: Componentes reutilizables y modulares
@@ -172,10 +171,12 @@ portfolio-egs/
 
 ### 1. Portafolio de Proyectos
 Incluye proyectos reales desarrollados durante la carrera:
-- [Proyecto 1 - Descripción](link-to-project)
-- [Proyecto 2 - Descripción](link-to-project)
-- [Proyecto 3 - Descripción](link-to-project)
-- ... [ver todos los proyectos en la sección Portafolio]
+- **[SEGMUN](https://github.com/enmanuelgs/SEGMUN)**: Solución integral para la administración y evaluación de Modelos de Naciones Unidas (.NET 9, EF Core, PostgreSQL, React).
+- **[SIPAD](https://github.com/enmanuelgs/SIPADBackend)**: Sistema Predictivo de Abandono Escolar nacional, integrando datos de MINERD y ONE (ASP.NET Core 8, Clean Architecture).
+- **[Opinions Analytics](https://github.com/enmanuelgs/OpinionsAnalytics)**: Proceso ETL completo para análisis de opiniones de clientes y toma de decisiones.
+- **[Agenda Multicapas](https://github.com/enmanuelgs/agendaMulticapasReact)**: Gestión de contactos consumiendo una API robusta bajo arquitectura multicapas.
+- **[Mokepon](https://github.com/enmanuelgs/mokepon)**: Juego interactivo de mascotas desarrollado para fortalecer lógica del DOM y fundamentos web.
+- ... [ver todos los proyectos en la sección Portafolio de la web]
 
 ### 2. Blog
 Artículos técnicos sobre:
