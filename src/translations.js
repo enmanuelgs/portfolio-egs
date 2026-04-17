@@ -11,31 +11,86 @@ export const translations = {
         },
         about: {
             title: "Acerca de mí",
-            p1: "¡Hola! Mi nombre es Enmanuel y disfruto creando cosas que viven en el internet. Mi interés en el desarrollo web comenzó cuando decidí explorar cómo se construían los sistemas de información, y desde entonces he estado perfeccionando mis habilidades en el análisis y diseño de software.",
-            p2: "Avanzando hasta hoy, tengo el privilegio de estar cursando mi último cuatrimestre del Técnico Superior en Desarrollo de Software en el ITLA. Mi enfoque principal es construir aplicaciones robustas, escalables y con una gran experiencia de usuario.",
-            tech: "Aquí hay algunas tecnologías con las que he estado trabajando recientemente:"
+            p1: "¡Hola! Mi nombre es Enmanuel y disfruto creando cosas que viven en el internet. Soy estudiante de término del Técnico Superior en Desarrollo de Software en el ITLA con un índice académico de 3.8 / 4.0.",
+            p2: "Me especializo en construir soluciones completas, desde interfaces modernas hasta sistemas backend robustos, aplicando Clean Architecture y metodologías ágiles. Actualmente desarrollo SIPAD, un sistema predictivo de deserción escolar a escala nacional como proyecto de tesis.",
+            tech: "Aquí hay algunas tecnologías con las que he estado trabajando recientemente:",
+            education_title: "Educación",
+            education: [
+                {
+                    title: "Técnico Superior en Desarrollo de Software",
+                    place: "ITLA (Instituto Tecnológico de las Américas)",
+                    range: "Enero 2024 – Actualidad",
+                    honors: "Honores: índice académico acumulado de 3.8"
+                },
+                {
+                    title: "Bachiller Técnico en Desarrollo y Administración de Aplicaciones Informáticas",
+                    place: "Politécnico Belisario Peguero Guerrero P.N.",
+                    range: "Noviembre 2020 – Julio 2023",
+                    honors: "Honores: Graduado de honor con índice académico de 98"
+                }
+            ],
+            cert_title: "Certificaciones y Capacitaciones",
+            certifications: [
+                {
+                    title: "Programador Web Full Stack",
+                    place: "Talento Digital, Indotel",
+                    range: "Noviembre 2025 – Enero 2026"
+                },
+                {
+                    title: "Programa de Iniciación en Competencias Digitales",
+                    place: "IMMUNE Technology Institute, Madrid",
+                    range: "Julio – Noviembre 2025"
+                },
+                {
+                    title: "Programación Web en JavaScript",
+                    place: "ITLA",
+                    range: "Enero – Abril 2024"
+                },
+                {
+                    title: "Programación de páginas Web con JavaScript y HTML",
+                    place: "CENTU",
+                    range: "Marzo 2023 – Mayo 2023"
+                }
+            ]
         },
         experience: {
             title: "Experiencia Laboral",
-            role: "Pasante de Tecnología",
-            company: "DINTEL (P.N.)",
-            range: "Septiembre 2022 – Junio 2023",
-            description: "Desarrollo de un sistema de escritorio para el control de inventario y equipos del departamento. Además, brindé soporte técnico de primer y segundo nivel y generé informes técnicos detallados sobre el estado del parque tecnológico de la institución.",
-            bullets: [
-                "Diseño e implementación de base de datos para gestión de activos.",
-                "Optimización de procesos de soporte técnico interno.",
-                "Generación de reportes de auditoría técnica."
+            jobs: [
+                {
+                    role: "Pasante de Tecnología",
+                    company: "DINTEL (P.N.)",
+                    range: "Septiembre 2022 – Junio 2023",
+                    description: "Desarrollo de un sistema de escritorio para el control de inventario y equipos del departamento. Brindé soporte técnico y generé informes técnicos detallados sobre la infraestructura tecnológica.",
+                    bullets: [
+                        "Diseño e implementación de base de datos para gestión de activos.",
+                        "Optimización de procesos de soporte técnico interno.",
+                        "Generación de reportes de auditoría técnica."
+                    ],
+                    tech: ["C#", ".NET", "SQL Server"]
+                },
+                {
+                    role: "Desarrollador — Sistema de Registro",
+                    company: "Politécnico Belisario Peguero Guerrero",
+                    range: "Enero 2022 – Agosto 2022",
+                    description: "Optimización de procesos administrativos liderando equipo bajo metodología SCRUM.",
+                    bullets: [
+                        "Liderazgo técnico en la creación del sistema de registro estudiantil.",
+                        "Aplicación de metodologías ágiles (SCRUM) para entregas incrementales.",
+                        "Elaboración de documentación técnica completa (Diagramas UML, Casos de Uso)."
+                    ],
+                    tech: ["C#", "SQL Server", "UML", "SCRUM"]
+                }
             ]
         },
         projects: {
             title: "Proyectos y Colaboraciones",
             sipad: {
-                overline: "Colaboración Destacada (Backend)",
-                description: "Participé activamente en el desarrollo del backend de SIPAD (Sistema de Predicción de Deserción Escolar). Una plataforma crítica que integra datos de MINERD, ONE y CONANI mediante un Pipeline ETL automatizado y una arquitectura basada en Clean Architecture para predecir zonas de riesgo educativo."
+                overline: "Proyecto de Tesis (Backend)",
+                description: "Sistema predictivo a escala nacional que integra datos de MINERD, ONE, CONANI y MISPAS. Implementación de 12 servicios ETL, un orquestador de pipeline automatizado y 8 controladores REST bajo Clean Architecture."
             },
             segmun: {
                 overline: "Proyecto Principal",
-                description: "Solución tecnológica integral para la administración y evaluación de Modelos de Naciones Unidas. Automatiza la gestión de delegados y garantiza precisión en las métricas de desempeño mediante una interfaz moderna."
+                description: "Solución tecnológica integral para la administración y evaluación de Modelos de Naciones Unidas. Automatiza la gestión de delegados y comités, garantizando precisión en las métricas mediante .NET 9."
             },
             others: "Otros Proyectos",
             opinions: "Proceso ETL completo para análisis de opiniones de clientes y toma de decisiones basada en datos.",
@@ -44,7 +99,7 @@ export const translations = {
         },
         hobbies: {
             title: "Hobbies",
-            description: "Aunque gran parte de mi tiempo lo dedico a estudiar, estas son algunas de las cosas que me apasionan y en las que invierto mi tiempo libre:",
+            description: "Aunque gran parte de mi tiempo lo dedico a estudiar, estas son algunas de las cosas que me apasionan:",
             list: ["Programar", "Jugar videojuegos", "Escuchar música", "Cantar", "Leer", "Debates y Oratoria"]
         },
         contact: {
@@ -70,40 +125,95 @@ export const translations = {
         },
         about: {
             title: "About Me",
-            p1: "Hello! My name is Enmanuel and I enjoy creating things that live on the internet. My interest in web development started when I decided to explore how information systems were built, and I've been honing my skills in software analysis and design ever since.",
-            p2: "Fast-forward to today, I have the privilege of being in my final semester of the Software Development Higher Technical degree at ITLA. My main focus is building robust, scalable applications with a great user experience.",
-            tech: "Here are a few technologies I've been working with recently:"
+            p1: "Hello! My name is Enmanuel and I enjoy creating things that live on the internet. I am a final-year Software Development student at ITLA with a 3.8 / 4.0 GPA.",
+            p2: "I specialize in building end-to-end solutions, from modern interfaces to robust backend systems, applying Clean Architecture and agile methodologies. I am currently developing SIPAD, a national-scale school dropout prediction system, as my graduation project.",
+            tech: "Here are a few technologies I've been working with recently:",
+            education_title: "Education",
+            education: [
+                {
+                    title: "Higher Technical Degree in Software Development",
+                    place: "ITLA (Institute of Technology of the Americas)",
+                    range: "January 2024 – Present",
+                    honors: "Honors: Cumulative GPA of 3.8"
+                },
+                {
+                    title: "Technical High School Diploma in Software Development & IT Admin",
+                    place: "Belisario Peguero Guerrero Polytechnic",
+                    range: "November 2020 – July 2023",
+                    honors: "Honors: Graduated with honors, GPA of 98/100"
+                }
+            ],
+            cert_title: "Certifications & Training",
+            certifications: [
+                {
+                    title: "Full Stack Web Programmer",
+                    place: "Talento Digital, Indotel",
+                    range: "November 2025 – January 2026"
+                },
+                {
+                    title: "Digital Skills Initiation Program",
+                    place: "IMMUNE Technology Institute, Madrid",
+                    range: "July – November 2025"
+                },
+                {
+                    title: "Web Programming in JavaScript",
+                    place: "ITLA",
+                    range: "January – April 2024"
+                },
+                {
+                    title: "Web Page Programming with JavaScript and HTML",
+                    place: "CENTU",
+                    range: "March – May 2023"
+                }
+            ]
         },
         experience: {
             title: "Work Experience",
-            role: "Technology Intern",
-            company: "DINTEL (P.N.)",
-            range: "September 2022 – June 2023",
-            description: "Development of a desktop system for inventory and equipment control for the department. Additionally, I provided first and second-level technical support and generated detailed technical reports on the status of the institution's technological infrastructure.",
-            bullets: [
-                "Design and implementation of assets management database.",
-                "Optimization of internal technical support processes.",
-                "Generation of technical audit reports."
+            jobs: [
+                {
+                    role: "Technology Intern",
+                    company: "DINTEL (P.N.)",
+                    range: "September 2022 – June 2023",
+                    description: "Development of a desktop system for inventory and equipment control. Provided technical support and generated detailed infrastructure reports.",
+                    bullets: [
+                        "Design and implementation of asset management database.",
+                        "Optimization of internal technical support processes.",
+                        "Generation of technical audit reports."
+                    ],
+                    tech: ["C#", ".NET", "SQL Server"]
+                },
+                {
+                    role: "Developer — Registration System",
+                    company: "Belisario Peguero Guerrero Polytechnic",
+                    range: "January 2022 – August 2022",
+                    description: "Optimization of administrative processes leading a team under SCRUM methodology.",
+                    bullets: [
+                        "Technical leadership in the creation of the student registration system.",
+                        "Application of agile methodologies (SCRUM) for incremental deliveries.",
+                        "Development of complete technical documentation (UML Diagrams, Use Cases)."
+                    ],
+                    tech: ["C#", "SQL Server", "UML", "SCRUM"]
+                }
             ]
         },
         projects: {
             title: "Projects and Collaborations",
             sipad: {
-                overline: "Featured Collaboration (Backend)",
-                description: "I actively participated in the backend development of SIPAD (School Dropout Prediction System). A critical platform that integrates data from MINERD, ONE, and CONANI through an automated ETL Pipeline and a Clean Architecture-based design to predict educational risk zones."
+                overline: "Graduation Project (Backend)",
+                description: "National-scale predictive system integrating data from MINERD, ONE, CONANI, and MISPAS. Implementation of 12 ETL services, an automated pipeline orchestrator, and 8 REST controllers under Clean Architecture."
             },
             segmun: {
                 overline: "Main Project",
-                description: "Comprehensive technological solution for the administration and evaluation of Model United Nations. It automates delegate management and ensures accuracy in performance metrics through a modern interface."
+                description: "Comprehensive technological solution for the administration and evaluation of Model United Nations. Automates delegate and committee management, ensuring metric accuracy using .NET 9."
             },
             others: "Other Projects",
-            opinions: "Complete ETL process for customer opinion analysis and data-driven decision making.",
+            opinions: "Complete ETL process for customer feedback analysis and data-driven decision making.",
             agenda: "Efficient contact management consuming a robust API under multi-layer architecture.",
-            mokepon: "Interactive pet game developed to strengthen web fundamentals and DOM logic."
+            mokepon: "Interactive pet game developed to strengthen programming logic and DOM manipulation."
         },
         hobbies: {
             title: "Hobbies",
-            description: "Although I spend most of my time studying, these are some of the things I am passionate about and invest my free time in:",
+            description: "Although I spend most of my time studying, these are some of the things I am passionate about:",
             list: ["Coding", "Gaming", "Listening to Music", "Singing", "Reading", "Debate & Public Speaking"]
         },
         contact: {

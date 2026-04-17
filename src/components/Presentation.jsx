@@ -15,16 +15,16 @@ const Presentation = () => {
                     <div>
                         <p>{t.p1}</p>
                         <p>{t.p2}</p>
-                        <p>{t.tech}</p>
+                        <p style={{ marginTop: '20px' }}>{t.tech}</p>
                     </div>
 
                     <ul className="skills-list">
                         <li>JavaScript (ES6+)</li>
                         <li>React</li>
                         <li>Node.js</li>
-                        <li>HTML & CSS</li>
-                        <li>SQL Server</li>
-                        <li>C# / .NET</li>
+                        <li>ASP.NET Core / .NET 9</li>
+                        <li>PostgreSQL / SQL Server</li>
+                        <li>C# / Clean Architecture</li>
                     </ul>
                 </div>
 

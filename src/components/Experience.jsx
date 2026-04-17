@@ -12,31 +12,32 @@ const Experience = () => {
             
             <div className="inner">
                 <div className="experience-list">
-                    <div className="experience-item">
-                        <div className="exp-header">
-                            <h3 className="exp-title">
-                                {t.role} <span className="highlight">@ {t.company}</span>
-                            </h3>
-                            <p className="exp-range">{t.range}</p>
-                        </div>
-                        
-                        <div className="exp-description">
-                            <p>{t.description}</p>
+                    {t.jobs.map((job, index) => (
+                        <div className="experience-item" key={index} style={{ marginBottom: '50px' }}>
+                            <div className="exp-header">
+                                <h3 className="exp-title">
+                                    {job.role} <span className="highlight">@ {job.company}</span>
+                                </h3>
+                                <p className="exp-range">{job.range}</p>
+                            </div>
                             
-                            <ul className="exp-bullets">
-                                {t.bullets.map((bullet, index) => (
-                                    <li key={index}>{bullet}</li>
-                                ))}
-                            </ul>
-                            
-                            <p className="exp-tech">
-                                <span className="font-mono">C#</span>
-                                <span className="font-mono">.NET</span>
-                                <span className="font-mono">SQL Server</span>
-                                <span className="font-mono">Office Suite</span>
-                            </p>
+                            <div className="exp-description">
+                                <p>{job.description}</p>
+                                
+                                <ul className="exp-bullets">
+                                    {job.bullets.map((bullet, bIndex) => (
+                                        <li key={bIndex}>{bullet}</li>
+                                    ))}
+                                </ul>
+                                
+                                <p className="exp-tech">
+                                    {job.tech.map((tech, tIndex) => (
+                                        <span className="font-mono" key={tIndex}>{tech}</span>
+                                    ))}
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>
