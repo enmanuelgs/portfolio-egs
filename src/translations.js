@@ -55,7 +55,7 @@ export const translations = {
         },
         footer: {
             designed: "Diseñado e Implementado por Enmanuel Guerrero",
-            rights: "© 2024 - Todos los derechos reservados"
+            rights: "© 2026 - Todos los derechos reservados"
         }
     },
     en: {
@@ -114,7 +114,7 @@ export const translations = {
         },
         footer: {
             designed: "Designed and Built by Enmanuel Guerrero",
-            rights: "© 2024 - All rights reserved"
+            rights: "© 2026 - All rights reserved"
         }
     }
 };
