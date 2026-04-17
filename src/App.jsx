@@ -8,23 +8,26 @@ import Contact from './components/Contact';
 import Socials from './components/Socials';
 import Email from './components/Email';
 import Footer from './components/Footer';
+import { LanguageProvider } from './context/LanguageContext';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Socials />
-      <Email />
-      <main className="fillHeight">
-        <Presentation />
-        <Experience />
-        <Projects />
-        <Hobbies />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <Header />
+        <Socials />
+        <Email />
+        <main className="fillHeight">
+          <Presentation />
+          <Experience />
+          <Projects />
+          <Hobbies />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

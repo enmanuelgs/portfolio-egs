@@ -1,21 +1,23 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 const Contact = () => {
+    const { language } = useLanguage();
+    const t = translations[language].contact;
+
     return (
         <section id="contact" className="contact-section">
-            <h2 className="numbered-heading overline">¿Qué sigue?</h2>
-            <h2 className="title">Ponte en contacto</h2>
+            <h2 className="numbered-heading overline">{t.overline}</h2>
+            <h2 className="title">{t.title}</h2>
+            
+            <p className="contact-text">{t.description}</p>
 
-            <p className="contact-text">
-                Mi bandeja de entrada siempre está abierta.
-                Si tienes alguna pregunta o simplemente quieres saludar, ¡haré todo lo posible por responderte!
-            </p>
-
-            <a
-                href="mailto:enmanuelgs002@gmail.com?subject=Hola Enmanuel!"
+            <a 
+                href="mailto:enmanuelgs002@gmail.com?subject=Hola Enmanuel!" 
                 className="email-link"
             >
-                Di Hola
+                {t.button}
             </a>
         </section>
     );

@@ -1,28 +1,25 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 const Projects = () => {
-    // Color personalizado para el perfil
+    const { language } = useLanguage();
+    const t = translations[language].projects;
     const brandBlue = '#C7D1F0';
 
     return (
         <section id="projects">
-            {/* --- SECCIÓN DE PROYECTOS Y COLABORACIONES --- */}
-            <h2 className="numbered-heading">Proyectos y Colaboraciones</h2>
+            <h2 className="numbered-heading">{t.title}</h2>
 
             <div className="projects-grid">
                 
-                {/* SIPAD - Colaboración Destacada */}
+                {/* SIPAD */}
                 <div className="project-content" style={{ marginBottom: '80px' }}>
                     <div>
-                        <p className="project-overline" style={{ color: brandBlue }}>Colaboración Destacada (Backend)</p>
+                        <p className="project-overline" style={{ color: brandBlue }}>{t.sipad.overline}</p>
                         <h3 className="project-title" style={{ color: brandBlue }}>SIPAD</h3>
                         <div className="project-description">
-                            <p>
-                                Participé activamente en el desarrollo del backend de <span className="highlight">SIPAD</span> (Sistema de Predicción de Deserción Escolar). 
-                                Una plataforma crítica que integra datos de <span className="highlight">MINERD, ONE y CONANI</span> mediante un 
-                                <span className="highlight"> Pipeline ETL automatizado</span> y una arquitectura basada en 
-                                <span className="highlight"> Clean Architecture</span> para predecir zonas de riesgo educativo.
-                            </p>
+                            <p>{t.sipad.description}</p>
                         </div>
                         <ul className="project-tech-list">
                             <li>ASP.NET Core 8.0</li>
@@ -34,18 +31,15 @@ const Projects = () => {
                     </div>
                 </div>
 
-                {/* SEGMUN - Proyecto Principal */}
+                {/* SEGMUN */}
                 <div className="project-content" style={{ marginBottom: '60px' }}>
                     <div>
-                        <p className="project-overline" style={{ color: brandBlue }}>Proyecto Principal</p>
+                        <p className="project-overline" style={{ color: brandBlue }}>{t.segmun.overline}</p>
                         <h3 className="project-title">
                             <a href="https://github.com/enmanuelgs/SEGMUN" target="_blank" rel="noreferrer" style={{ color: brandBlue }}>SEGMUN</a>
                         </h3>
                         <div className="project-description">
-                            <p>
-                                Solución tecnológica integral para la administración y evaluación de Modelos de Naciones Unidas.
-                                Automatiza la gestión de delegados y garantiza precisión en las métricas de desempeño mediante una interfaz moderna.
-                            </p>
+                            <p>{t.segmun.description}</p>
                         </div>
                         <ul className="project-tech-list">
                             <li>.NET 9</li>
@@ -63,10 +57,9 @@ const Projects = () => {
                 </div>
 
                 {/* Otros Proyectos Grid */}
-                <h3 className="section-subtitle">Otros Proyectos</h3>
+                <h3 className="section-subtitle">{t.others}</h3>
                 <div className="other-projects-grid">
 
-                    {/* Opinions Analytics */}
                     <div className="project-card">
                         <header>
                             <div className="project-top">
@@ -79,7 +72,7 @@ const Projects = () => {
                             </div>
                             <h3 className="project-title">Opinions Analytics</h3>
                             <div className="project-description">
-                                <p>Proceso ETL completo para análisis de opiniones de clientes y toma de decisiones basada en datos.</p>
+                                <p>{t.opinions}</p>
                             </div>
                         </header>
                         <footer>
@@ -91,7 +84,6 @@ const Projects = () => {
                         </footer>
                     </div>
 
-                    {/* Agenda Multicapas */}
                     <div className="project-card">
                         <header>
                             <div className="project-top">
@@ -104,7 +96,7 @@ const Projects = () => {
                             </div>
                             <h3 className="project-title">Agenda Multicapas</h3>
                             <div className="project-description">
-                                <p>Gestión eficiente de contactos consumiendo una API robusta bajo arquitectura multicapas.</p>
+                                <p>{t.agenda}</p>
                             </div>
                         </header>
                         <footer>
@@ -116,7 +108,6 @@ const Projects = () => {
                         </footer>
                     </div>
 
-                    {/* Mokepon */}
                     <div className="project-card">
                         <header>
                             <div className="project-top">
@@ -129,7 +120,7 @@ const Projects = () => {
                             </div>
                             <h3 className="project-title">Mokepon</h3>
                             <div className="project-description">
-                                <p>Juego interactivo de mascotas desarrollado para fortalecer fundamentos web y lógica del DOM.</p>
+                                <p>{t.mokepon}</p>
                             </div>
                         </header>
                         <footer>

@@ -1,26 +1,21 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 const Presentation = () => {
+    const { language } = useLanguage();
+    const t = translations[language].about;
+
     return (
         <section id="about" className="about-section">
-            <h2 className="numbered-heading">Acerca de mí</h2>
+            <h2 className="numbered-heading">{t.title}</h2>
 
             <div className="inner">
                 <div className="about-text">
                     <div>
-                        <p>
-                            ¡Hola! Mi nombre es Enmanuel y disfruto creando cosas que viven en el internet.
-                            Mi interés en el desarrollo web comenzó cuando decidí explorar cómo se construían los sistemas de información,
-                            y desde entonces he estado perfeccionando mis habilidades en el análisis y diseño de software.
-                        </p>
-
-                        <p>
-                            Avanzando hasta hoy, tengo el privilegio de estar cursando mi último cuatrimestre del
-                            <span className="highlight"> Técnico Superior en Desarrollo de Software </span> en el <span className="highlight">ITLA</span>.
-                            Mi enfoque principal es construir aplicaciones robustas, escalables y con una gran experiencia de usuario.
-                        </p>
-
-                        <p>Aquí hay algunas tecnologías con las que he estado trabajando recientemente:</p>
+                        <p>{t.p1}</p>
+                        <p>{t.p2}</p>
+                        <p>{t.tech}</p>
                     </div>
 
                     <ul className="skills-list">

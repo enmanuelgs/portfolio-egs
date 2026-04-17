@@ -1,20 +1,20 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 const Hobbies = () => {
+    const { language } = useLanguage();
+    const t = translations[language].hobbies;
+
     return (
         <section id="hobbies">
-            <h2 className="numbered-heading">Hobbies</h2>
-            <p>
-                Aunque gran parte de mi tiempo lo dedico a estudiar, estas son algunas de las cosas que me apasionan y en las que invierto mi tiempo libre:
-            </p>
+            <h2 className="numbered-heading">{t.title}</h2>
+            <p>{t.description}</p>
 
             <ul className="hobbies-grid">
-                <li>Programar</li>
-                <li>Jugar videojuegos</li>
-                <li>Escuchar música</li>
-                <li>Cantar</li>
-                <li>Leer</li>
-                <li>Debates y Oratoria</li>
+                {t.list.map((hobby, index) => (
+                    <li key={index}>{hobby}</li>
+                ))}
             </ul>
         </section>
     );

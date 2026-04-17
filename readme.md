@@ -1,102 +1,106 @@
-# 🚀 Portafolio Profesional | Enmanuel Guerrero Santana
+# 🚀 Professional Portfolio | Enmanuel Guerrero Santana
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-> Portafolio web moderno y minimalista desarrollado con **React + Vite**, diseñado para exhibir proyectos de ingeniería de software con una estética de alta gama y enfoque en la experiencia de usuario.
+> A modern, minimalist web portfolio built with **React + Vite**, designed to showcase software engineering projects with a high-end aesthetic and a strong focus on user experience.
 
 ---
 
-## ✨ Características Principales
+## ✨ Key Features
 
-*   **Estética Premium:** Inspirado en la arquitectura visual de Brittany Chiang (v4), con un diseño limpio, profesional y enfocado en el contenido.
-*   **Diseño Responsivo:** Adaptabilidad total desde dispositivos móviles hasta pantallas de alta resolución.
-*   **Glassmorphism & Blur:** Navegación dinámica con efectos de desenfoque y transparencias modernas.
-*   **Clean Architecture:** Código modularizado por componentes React para facilitar el mantenimiento y escalabilidad.
-*   **Optimización de Rendimiento:** Construido sobre Vite para tiempos de carga ultrarrápidos y desarrollo ágil.
+*   **Premium Aesthetic:** Inspired by Brittany Chiang's visual architecture (v4), featuring a clean, professional, and content-focused design.
+*   **Full Internationalization (i18n):** Seamlessly toggle between **English and Spanish** with a custom React Context-based language engine.
+*   **Responsive Design:** Fully adaptable layout from mobile devices to ultra-high-resolution screens.
+*   **Glassmorphism & Blur:** Dynamic navigation with modern blur effects and glass-like transparencies.
+*   **Clean Architecture:** Modularized code following React best practices for components to ensure maintenance and scalability.
+*   **Performance Optimization:** Built on Vite for lightning-fast load times and an agile developer experience.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 
-| Área | Tecnologías |
+| Area | Technologies |
 | :--- | :--- |
 | **Core** | React 18, JavaScript (ES6+) |
+| **I18n Engine** | Custom React Context API |
 | **Tooling** | Vite, NPM |
 | **Styling** | Vanilla CSS (Variables, Grid, Flexbox) |
-| **Iconografía** | FontAwesome 6 |
-| **Tipografía** | Inter, Fira Code (Google Fonts) |
+| **Iconography** | FontAwesome 6 |
+| **Typography** | Inter, Fira Code (Google Fonts) |
 
 ---
 
-## 📂 Proyectos Destacados
+## 📂 Featured Projects
 
 ### 🏛️ SEGMUN
-**Sistema de Gestión de Modelos de Naciones Unidas.** Solución tecnológica integral para la administración y evaluación de Modelos de Naciones Unidas.
+**Model United Nations Management System.** A comprehensive technological solution for the administration and evaluation of Model UN events.
 *   **Stack:** .NET 9, EF Core, PostgreSQL, React.
-*   **Funcionalidad:** Automatización de delegados, comités y métricas de desempeño.
-*   [Ver Repositorio](https://github.com/enmanuelgs/SEGMUN)
+*   **Functionality:** Automation of delegates, committees, and performance metrics.
+*   [View Repository](https://github.com/enmanuelgs/SEGMUN)
 
 ### 📊 SIPAD
-**Sistema Predictivo de Abandono Escolar.** Proyecto de grado de alto impacto social.
+**School Dropout Prediction System.** A high-social-impact graduation project.
 *   **Stack:** ASP.NET Core 8.0, PostgreSQL, Clean Architecture.
-*   **Funcionalidad:** Pipeline ETL masivo para integrar datos de MINERD, ONE y CONANI para predicción de deserción.
-*   [Ver Repositorio](https://github.com/enmanuelgs/SIPADBackend)
+*   **Functionality:** Massive ETL pipeline to integrate data from MINERD, ONE, and CONANI for dropout prediction.
+*   [View Repository](https://github.com/enmanuelgs/SIPADBackend)
 
 ### 📈 Opinions Analytics
-Sistema de análisis de opiniones implementando procesos ETL completos para la toma de decisiones basada en datos.
+A customer feedback analysis system implementing complete ETL processes for data-driven decision making.
 *   **Stack:** C#, SQL Server, Data Analytics.
 
 ---
 
-## 🚀 Instalación y Uso
+## 🚀 Installation and Usage
 
-Si deseas clonar este portafolio y ejecutarlo localmente:
+To clone and run this portfolio locally:
 
-1.  **Clonar el repositorio:**
+1.  **Clone the repository:**
     ```bash
     git clone https://github.com/enmanuelgs/portfolio-egs.git
     ```
-2.  **Instalar dependencias:**
+2.  **Install dependencies:**
     ```bash
     npm install
     ```
-3.  **Ejecutar en modo desarrollo:**
+3.  **Run in development mode:**
     ```bash
     npm run dev
     ```
-4.  **Generar build de producción:**
+4.  **Build for production:**
     ```bash
     npm run build
     ```
 
 ---
 
-## 🏗️ Estructura del Proyecto
+## 🏗️ Project Structure
 
 ```text
 portfolio-egs/
 ├── src/
-│   ├── components/     # Componentes modulares (Header, Projects, etc.)
-│   ├── App.jsx         # Orquestador principal de la aplicación
-│   ├── index.css       # Diseño base y variables del sistema (Modern CSS)
-│   └── main.jsx        # Punto de entrada de React
-├── public/             # Activos estáticos (Logos, imágenes)
-├── index.html          # Estructura base de la página
-└── vite.config.js      # Configuración de compilación
+│   ├── components/     # Modular components (Header, Projects, etc.)
+│   ├── context/        # i18n Context (LanguageProvider)
+│   ├── translations.js # Centralized translation dictionary
+│   ├── App.jsx         # Main application orchestrator
+│   ├── index.css       # Design base and system variables (Modern CSS)
+│   └── main.jsx        # React entry point
+├── public/             # Static assets (Logos, images, resumes)
+├── index.html          # Base page structure
+└── vite.config.js      # Build configuration
 ```
 
 ---
 
-## 📬 Contacto
+## 📬 Get in Touch
 
-Si estás interesado en colaborar o simplemente quieres saludar:
+If you are interested in collaborating or just want to say hi:
 
 *   **LinkedIn:** [linkedin.com/in/enmanuelgs](https://www.linkedin.com/in/enmanuelguerrerosantana/)
 *   **Email:** [enmanuelgs002@gmail.com](mailto:enmanuelgs002@gmail.com)
 *   **GitHub:** [@enmanuelgs](https://github.com/enmanuelgs)
 
 ---
-Desarrollado con ❤️ por **Enmanuel Guerrero Santana**.
+Developed with ❤️ by **Enmanuel Guerrero Santana**.
