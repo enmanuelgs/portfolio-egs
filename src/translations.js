@@ -58,7 +58,7 @@ export const translations = {
             jobs: [
                 {
                     role: "Pasante de Tecnología",
-                    company: "DINTEL (P.N.)",
+                    company: "Dirección Central de Inteligencia y Tecnología de la Policía Nacional (DINTEL P.N.)",
                     range: "Septiembre 2022 – Junio 2023",
                     description: "Desarrollo de un sistema de escritorio para el control de inventario y equipos del departamento. Brindé soporte técnico y generé informes técnicos detallados sobre la infraestructura tecnológica.",
                     bullets: [
@@ -172,7 +172,7 @@ export const translations = {
             jobs: [
                 {
                     role: "Technology Intern",
-                    company: "DINTEL (P.N.)",
+                    company: "Central Directorate of Intelligence and Technology of the National Police (DINTEL P.N.)",
                     range: "September 2022 – June 2023",
                     description: "Development of a desktop system for inventory and equipment control. Provided technical support and generated detailed infrastructure reports.",
                     bullets: [
