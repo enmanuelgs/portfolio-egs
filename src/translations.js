@@ -57,6 +57,20 @@ export const translations = {
             title: "Experiencia Laboral",
             jobs: [
                 {
+                    role: "Pasante – Departamento de Proyectos TIC",
+                    company: "Ministerio de Educación de la República Dominicana (MINERD)",
+                    range: "Abril 2026 – Actualidad",
+                    description: "Desarrollo del backend institucional y persistencia de datos bajo estándares de Clean Architecture y digitalización de servicios públicos.",
+                    bullets: [
+                        "Desarrollo el backend institucional utilizando .NET 8 bajo el paradigma de Clean Architecture, aplicando patrones como CQRS y MediatR para asegurar la mantenibilidad y el rigor arquitectónico del sistema.",
+                        "Diseño y administro la persistencia de datos en SQL Server, integrando Liquibase para el control de versiones de la base de datos y garantizando la integridad de la información en la digitalización de servicios públicos.",
+                        "Colaboro en la implementación del frontend con React 19 y TypeScript, enfocándome en la optimización del rendimiento mediante SWR y el cumplimiento de estándares de usabilidad con MUI v7.",
+                        "Aseguro la calidad del software mediante la ejecución de pruebas unitarias en xUnit y el monitoreo de flujos de datos con Serilog, promoviendo prácticas de desarrollo robustas dentro del equipo técnico.",
+                        "Gestiono la infraestructura de almacenamiento con MinIO, facilitando la transición tecnológica de procesos burocráticos hacia soluciones digitales escalables y de alta disponibilidad."
+                    ],
+                    tech: [".NET 8", "SQL Server", "Liquibase", "React 19", "TypeScript", "SWR", "MUI v7", "xUnit", "Serilog", "MinIO"]
+                },
+                {
                     role: "Pasante de Tecnología",
                     company: "Dirección Central de Inteligencia y Tecnología de la Policía Nacional (DINTEL P.N.)",
                     range: "Septiembre 2022 – Junio 2023",
@@ -170,6 +184,20 @@ export const translations = {
         experience: {
             title: "Work Experience",
             jobs: [
+                {
+                    role: "Intern – ICT Projects Department",
+                    company: "Ministry of Education of the Dominican Republic (MINERD)",
+                    range: "April 2026 – Present",
+                    description: "Development of institutional backend and data persistence under Clean Architecture standards and digitalization of public services.",
+                    bullets: [
+                        "Develop the institutional backend using .NET 8 under Clean Architecture, applying CQRS and MediatR patterns to ensure system maintainability and architectural rigor.",
+                        "Design and manage data persistence in SQL Server, integrating Liquibase for database version control and guaranteeing data integrity in the digitalization of public services.",
+                        "Collaborate on the frontend with React 19 and TypeScript, focusing on performance optimization through SWR and usability standards compliance with MUI v7.",
+                        "Ensure software quality by executing unit tests in xUnit and monitoring data flows with Serilog, promoting robust development practices within the technical team.",
+                        "Manage storage infrastructure with MinIO, facilitating the technological transition of bureaucratic processes toward scalable, high-availability digital solutions.",
+                    ],
+                    tech: [".NET 8", "SQL Server", "Liquibase", "React 19", "TypeScript", "SWR", "MUI v7", "xUnit", "Serilog", "MinIO"]
+                },
                 {
                     role: "Technology Intern",
                     company: "Central Directorate of Intelligence and Technology of the National Police (DINTEL P.N.)",
