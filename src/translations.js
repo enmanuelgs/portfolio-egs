@@ -59,7 +59,7 @@ export const translations = {
                 {
                     role: "Pasante – Departamento de Proyectos TIC",
                     company: "Ministerio de Educación de la República Dominicana (MINERD)",
-                    range: "Abril 2026 – Actualidad",
+                    range: "Abril 2026 – Julio 2026",
                     description: "Desarrollo del backend institucional y persistencia de datos bajo estándares de Clean Architecture y digitalización de servicios públicos.",
                     bullets: [
                         "Desarrollo el backend institucional utilizando .NET 8 bajo el paradigma de Clean Architecture, aplicando patrones como CQRS y MediatR para asegurar la mantenibilidad y el rigor arquitectónico del sistema.",
@@ -187,7 +187,7 @@ export const translations = {
                 {
                     role: "Intern – ICT Projects Department",
                     company: "Ministry of Education of the Dominican Republic (MINERD)",
-                    range: "April 2026 – Present",
+                    range: "April 2026 – July 2026",
                     description: "Development of institutional backend and data persistence under Clean Architecture standards and digitalization of public services.",
                     bullets: [
                         "Develop the institutional backend using .NET 8 under Clean Architecture, applying CQRS and MediatR patterns to ensure system maintainability and architectural rigor.",
